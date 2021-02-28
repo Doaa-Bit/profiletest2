@@ -9,7 +9,7 @@
         <link rel="shorticon " href="imges/icon.pang">
         <!--link css file-->
         <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/c8e4d183c2.js"crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     </head>
         <body>
             <!--main-->
@@ -30,7 +30,7 @@
                 <!--name-->
                 <div class="name">
                     <p>Hello</p>
-                    <h1>I'm<font color="#17d1ac"> Doa'a</font> Mohammed</h1>
+                    <h1>I'm<h2 color="#17d1ac"> Doa'a</h2> Mohammed</h1>
                     <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
                     <a href ="#" class="cv-btn">Download cv</a>
@@ -51,9 +51,10 @@
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their</p>
                     <button>More Details</button>
                 </div>
-                    <div class="about-model"></div>
+                <div class="about-model">
                     <img src="imges/images.jpg" alt="model"/>
                 </div>
+                    
             </section>
             <!--services-->
             <section id="services">
@@ -158,21 +159,21 @@
             <section id="contact-form">
                 <form>
                 <div class="contact-left">
-                    <h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ed98b;">Writ</font>e Us</h1>
+                    <h1 class="c-l-heading"><h2 style="border-bottom: 3px solid #1ed98b;">Writ</h2>e Us</h1>
                     <div class="Name">
-                    <font>Name</font>
+                    <h2>Name</h2>
                     <input type="text" placeholder="Full Name">
                     </div>
                     
                     <div class="Email">
-                    <font>Email</font>
+                    <h2>Email</h2>
                     <input type="Email" placeholder="Example@gmail.com">
                     </div>
 
                 </div>
                 <div class="contact-right">
                     <div class="message">
-                        <font>Message</font>
+                        <h2>Message</h2>
                         <textarea name="message" row="5" cols="20" placeholder="Write Message..."></textarea>
                         
                     </div>
@@ -180,14 +181,15 @@
                 </div>
                 </form>
             </section>
-            <script type="text/javascript" src="js/custom.js"></script>
+            <script type="text/javascript" src="./js/custom.js"></script>
             <script type="text/javascript">
-                $(document).ready(function()){
+                $(document).ready(function(){
                     $('.toggle').click(function(){
-                        $('.toggle').toggleclass('active')
-                        $('.nav ul').toggleclass('active-menu')
+                        console.log("running..");
+                         $('.toggle').toggleClass('active')
+                        $('nav ul').toggleClass('active-menu')
                     })
-                }
+                })
             </script>
 
         </body>
